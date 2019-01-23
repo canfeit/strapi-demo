@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "strapi-mongo",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application.",
@@ -21,10 +21,7 @@
   "dependencies": {
     "lodash": "^4.17.5",
     "strapi": "3.0.0-alpha.20",
-    "strapi-hook-bookshelf": "3.0.0-alpha.20",
-    "strapi-hook-knex": "3.0.0-alpha.20",
-    "knex": "latest",
-    "mysql": "2.16.0"
+    "strapi-hook-mongoose": "3.0.0-alpha.20"
   },
   "author": {
     "name": "A Strapi developer",
@@ -40,7 +37,7 @@
   ],
   "strapi": {
     "packageManager": "npm",
-    "uuid": "bf086226-35b1-4807-81e5-1fad7f109233"
+    "uuid": "c76d8f41-ce28-4c80-a662-625256da7167"
   },
   "engines": {
     "node": ">= 10.0.0",

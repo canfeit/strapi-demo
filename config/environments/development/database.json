@@ -2,18 +2,20 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-hook-bookshelf",
+      "connector": "strapi-hook-mongoose",
       "settings": {
-        "client": "mysql",
+        "client": "mongo",
         "host": "127.0.0.1",
         "srv": false,
-        "port": 3306,
+        "port": 27017,
         "database": "str",
-        "username": "root",
-        "password": "root",
-        "ssl": false
+        "username": "",
+        "password": ""
       },
-      "options": {}
+      "options": {
+        "authenticationDatabase": "",
+        "ssl": false
+      }
     }
   }
 }
