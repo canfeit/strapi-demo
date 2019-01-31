@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "documents",
+  "info": {
+    "name": "documents",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "md": {
+      "default": "",
+      "type": "text"
+    },
+    "blog": {
+      "model": "blog",
+      "via": "documents"
+    }
+  }
+}

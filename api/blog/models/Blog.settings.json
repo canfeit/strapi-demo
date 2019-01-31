@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "blogs",
+      "plugin": "users-permissions"
+    },
+    "documents": {
+      "collection": "documents",
+      "via": "blog"
+    }
+  }
+}
